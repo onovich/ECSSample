@@ -164,9 +164,23 @@ MonoBehaviour:
   m_GameObject: {fileID: 1671977668}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 76d752d40d8894b24b5e7527d2b45406, type: 3}
+  m_Script: {fileID: 11500000, guid: ce9621ecb2f194806b7d1b9d0e7e3232, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  MainThread: 1
+  IJobEntity: 0
+  Aspects: 0
+  Prefabs: 0
+  IJobChunk: 0
+  Reparenting: 0
+  EnableableComponents: 0
+  GameObjectSync: 0
+  CrossQuery: 0
+  RandomSpawn: 0
+  FirstPersonController: 0
+  FixedTimestep: 0
+  StateChange: 0
+  ClosestTarget: 0
 --- !u!1 &1749267457
 GameObject:
   m_ObjectHideFlags: 0
@@ -282,7 +296,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 1749267457}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: a0285b8d44a8e42f39b3e19ec4bbccee, type: 3}
+  m_Script: {fileID: 11500000, guid: a22045b285a8c4935938d6976eb019c7, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   DegreesPerSecond: 360

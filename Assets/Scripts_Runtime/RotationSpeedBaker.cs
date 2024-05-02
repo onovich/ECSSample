@@ -3,22 +3,20 @@ using Unity.Entities;
 using Unity.Mathematics;
 
 namespace HelloCube {
-
-    public class RotationSpeedComponentBaker : MonoBehaviour {
+    public class RotationSpeedBaker : MonoBehaviour {
         public float DegreesPerSecond = 360.0f;
 
-        class Baker : Baker<RotationSpeedComponentBaker> {
-            public override void Bake(RotationSpeedComponentBaker authoring) {
+        class Baker : Baker<RotationSpeedBaker> {
+            public override void Bake(RotationSpeedBaker authoring) {
                 var entity = GetEntity(TransformUsageFlags.Dynamic);
-                AddComponent(entity, new RotationSpeedComponent {
+                AddComponent(entity, new RotSpeedComponent {
                     RadiansPerSecond = math.radians(authoring.DegreesPerSecond)
                 });
-            } 
+            }
         }
     }
 
-    public struct RotationSpeedComponent : IComponentData {
+    public struct RotSpeedComponent : IComponentData {
         public float RadiansPerSecond;
     }
-
 }
