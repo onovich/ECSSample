@@ -6,7 +6,7 @@ namespace HelloCube {
     public partial struct RotationSystem : ISystem {
         [BurstCompile]
         public void OnCreate(ref SystemState state) {
-            state.RequireForUpdate<MainComponent>();
+            state.RequireForUpdate<MainComponentBaker>();
         }
 
         [BurstCompile]
